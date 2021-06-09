@@ -1,0 +1,11 @@
+header {
+    background-color: rgb(3, 25, 44);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+header > h2 {
+    padding: 1rem;
+    color: #fff;
+}

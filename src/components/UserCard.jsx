@@ -1,15 +1,14 @@
 import "./UserCard.css";
-import user from "../assets/user.png";
 
-function UserCard() {
+function UserCard({firstName, lastName, celuller, email, country, picture}) {
   return (
     <>
       <div className="card">
-        <img src={user} alt="user" />
-        <p className='name'>Random User</p>
-        <p>+62813434245</p>
-        <p>abstrac@email.com</p>
-        <p>Indonesia</p>
+        <img src={picture} alt="user" />
+        <p className='name'>{firstName} {lastName}</p>
+        <p>+{celuller}</p>
+        <p>{email}</p>
+        <p>{country}</p>
       </div>
     </>
   );

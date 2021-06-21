@@ -1,7 +1,7 @@
 .card {
     border: 1px solid rgb(192, 187, 187);
     border-radius: 0.5rem;
-    width: fit-content;
+    width: 15rem;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -23,4 +23,9 @@
 .card > p {
     /* text-align: center; */
     font-size: small;
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 1; /* number of lines to show */
+   -webkit-box-orient: vertical;
 }
